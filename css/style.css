@@ -1,0 +1,395 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --black-dark: #1c1c1c;
+  --gray-dark: #777777;
+  --text-white: #ffffff;
+  --bg-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding: 80px 20px;
+}
+
+main {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
+/* Header Section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  max-width: 1296px;
+  margin-inline: auto;
+}
+
+/* Banner */
+.banner_text_contents {
+  max-width: 625px;
+}
+
+.banner_title {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 100px;
+  color: var(--black-dark);
+}
+
+.banner_description {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 30px;
+  color: var(--gray-dark);
+  margin: 30px 0;
+}
+
+.primary_button {
+  width: 200px;
+  height: 64px;
+  background: linear-gradient(270deg, #ff0000 0%, #ff8938 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 27px;
+  color: var(--text-white);
+  outline: 0;
+  border: 0;
+  transition: all 0.3s;
+}
+
+.primary_button:hover {
+  background: linear-gradient(270deg, #f40000 0%, #fa8131 100%);
+}
+
+.primary_button > img {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.banner_image_contents {
+  max-width: 40.625rem;
+  position: relative;
+}
+
+.banner_image img {
+  max-width: 100%;
+}
+
+.rating {
+  width: 255px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 26px;
+  box-shadow: 4px 3px 22px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  position: absolute;
+  left: 80px;
+  bottom: 12px;
+  background-color: var(--bg-white);
+}
+
+.rating_image {
+  width: 48px;
+}
+
+.rating_point {
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 41px;
+  color: var(--black-dark);
+}
+
+.rating_description {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--gray-dark);
+}
+
+/* Our Featured Products */
+.featured_products_section {
+  margin-top: 130px;
+}
+
+.featured_text_contents {
+  text-align: center;
+}
+
+.featured_title {
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 61px;
+  color: var(--black-dark);
+}
+
+.featured_description {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 28px;
+  color: var(--gray-dark);
+  margin-top: 20px;
+}
+
+.products_details {
+  display: flex;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.products {
+  max-width: 267px;
+  background: linear-gradient(180deg, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  transition: all 0.3s ease-in;
+  box-shadow: 4px 6px 12px rgb(0 0 0 / 20%);
+}
+
+/* Transform Effect on Hover */
+.products:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 4px 6px 12px rgb(0 0 0 / 40%);
+}
+
+.products > img {
+  width: 135px;
+}
+
+.products_text_contents {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.products_title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 34px;
+  color: var(--black-dark);
+}
+
+.products_description {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--gray-dark);
+  margin-top: 10px;
+}
+
+/* Great Tea, Freshly Presented Section */
+.tea_description_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin-top: 130px;
+  /* max-width: 505px; */
+}
+
+.tea_images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.tea_images > .custom_bg_1 {
+  width: 238px;
+  height: 136px;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background: linear-gradient(270deg, #ff0000 0%, #ff8938 100%);
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+.tea_images > .custom_bg_2 {
+  width: 238px;
+  height: 355px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  background: rgba(230, 166, 35, 0.1);
+  background-image: url(../images/fresh-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.tea_images > .custom_bg_3 {
+  width: 238px;
+  height: 355px;
+  grid-column: 1;
+  grid-row: 2 / 4;
+  background: rgba(87, 118, 57, 0.1);
+  background-image: url(../images/fresh-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.tea_images > .custom_bg_4 {
+  width: 238px;
+  height: 136px;
+  grid-column: 2 / 3;
+  grid-row: 3;
+  background: linear-gradient(90deg, #d9d9d9 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 10px;
+}
+
+.tea_description {
+  max-width: 570px;
+}
+
+.tea_description > .description_contents > .title {
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 61px;
+  color: var(--black-dark);
+  margin-bottom: 10px;
+}
+
+.tea_description > .taste_contents {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 28px;
+  color: var(--gray-dark);
+  margin-top: 10px;
+}
+
+@media screen and (width < 576px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  /* Header Section */
+  .header {
+    flex-direction: column;
+  }
+
+  .banner_text_contents {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .banner_title {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+
+  .banner_description {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 20px 0;
+  }
+
+  .rating {
+    width: 210px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+    box-shadow: 4px 3px 22px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background-color: var(--bg-white);
+  }
+
+  .rating_point {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+
+  .rating_description {
+    font-size: 0.875rem;
+    line-height: 18px;
+  }
+
+  .rating_image {
+    width: auto;
+  }
+
+  /* Our Featured Products */
+  .featured_products_section {
+    margin-top: 70px;
+  }
+
+  .products_details {
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  /* Great Tea, Freshly Presented Section */
+  .tea_description_section {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .tea_images {
+    grid-template-columns: repeat(1, 267px);
+    column-gap: 0px;
+    row-gap: 20px;
+  }
+
+  .tea_images > .custom_bg_1 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .tea_images > .custom_bg_2 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .tea_images > .custom_bg_3 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+
+  .tea_images > .custom_bg_4 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 4;
+  }
+
+  .details {
+    text-align: justify;
+  }
+
+  
+}
